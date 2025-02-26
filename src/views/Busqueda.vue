@@ -1,6 +1,6 @@
 <template>
 	<div class="h-100 w-100 d-flex flex-column align-items-center gap-2">
-		<form class="d-flex w-75" role="search" v-on:submit.prevent>
+		<form class="d-flex w-75" role="search" v-on:submit.prevent="cargarResultados()">
 			<input class="form-control me-2 border border-1 border-secondary" type="search" id="busquedaECBE"
 				placeholder="Buscar ECBE o preguntar!" aria-label="Search" required>
 			<button class="btn btn-outline-secondary" type="submit"><i class="bi bi-search"></i></button>
@@ -38,8 +38,14 @@ import funciones from '@/assets/logica.js'
 export default {
 	methods: {
 		async cargarResultados() {
-			this.esRespuesta = true
-			//this.dataRespuesta = await funciones.buscarECBE()
+			try {
+				await funciones.buscarECBE().then((res) => {
+					this.dataRespuesta = res
+					this.esRespuesta = true
+				});
+			} catch (error) {
+				console.log(error)
+			}
 		}
 	},
 	data: () => ({
@@ -54,7 +60,7 @@ export default {
 		}
 	}),
 	components: {
-		FichaECBE
+		FichaECBE,
 	}
 }
 </script>

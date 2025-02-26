@@ -1,10 +1,10 @@
 import router from '@/main'
 
-function cambiarTitulo(titulo){
+function cambiarTitulo(titulo) {
 	document.getElementById("tituloGeneral").innerHTML = titulo
 }
 
-function ingreso(){
+function ingreso() {
 	let usuario = document.getElementById("InputEmail1").value
 	let contraseña = document.getElementById("InputPassword1").value
 
@@ -15,7 +15,19 @@ function ingreso(){
 	router.push("/")
 }
 
+async function buscarECBE() {
+	return {
+		"id": "uuid_del_fragmento",
+		"content": "Texto coincidente",
+		"document_id": "uuid_del_documento",
+		"filename": "archivo.pdf",
+		"similarity": 0.85
+	}
+}
+
+
 export default {
-		cambiarTitulo,
-		ingreso
+	cambiarTitulo,
+	ingreso,
+	buscarECBE
 }
