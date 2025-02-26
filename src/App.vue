@@ -1,14 +1,18 @@
 <template>
-	<div class="container ">
-	</div>
+	<BarraSuperior/>
+	<mainPage/>
+	<BarraInferior/>
 </template>
 <script>
+import BarraSuperior from './components/BarraSuperior.vue';
+import BarraInferior from './components/BarraInferior.vue';
+import mainPage from './views/mainPage.vue';
 export default {
-
+	components: {
+		BarraSuperior,
+		BarraInferior,
+		mainPage
+	}
 }
 </script>
-<style>
-	body {
-		background-color: rgb(195, 206, 238);
-	}
-</style>
+<style></style>
