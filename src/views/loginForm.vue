@@ -1,6 +1,6 @@
 <template>
 	<div class="d-flex flex-column align-items-center justify-content-center w-100">
-		<img class="img rounded-circle m-4" src="/public/favicon.png" alt=""
+		<img class="img rounded-circle m-4" src="@/assets/favicon.png" alt=""
 			style="height: 100px; width: 100px; border: 5px solid rgb(39, 90, 142);">
 		<form class="justify-content-center w-50" style="min-width: 250px;">
 			<div class="mb-3">

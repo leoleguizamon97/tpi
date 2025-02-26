@@ -1,18 +1,5 @@
 <template>
-	<BarraSuperior/>
-	<mainPage/>
-	<BarraInferior/>
+	<RouterView class="h-100" />
 </template>
-<script>
-import BarraSuperior from './components/BarraSuperior.vue';
-import BarraInferior from './components/BarraInferior.vue';
-import mainPage from './views/mainPage.vue';
-export default {
-	components: {
-		BarraSuperior,
-		BarraInferior,
-		mainPage
-	}
-}
-</script>
+<script></script>
 <style></style>
