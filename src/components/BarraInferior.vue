@@ -21,6 +21,7 @@ export default {
 .bi {
 	font-size: large;
 }
+
 .navBarItem {
 	display: flex;
 	flex-direction: column;
@@ -43,7 +44,6 @@ export default {
 		/* Tamaño para pantallas pequeñas (móviles) */
 	}
 }
-
 
 .navBarItem:hover {
 	background-color: rgb(39, 90, 142);

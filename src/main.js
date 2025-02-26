@@ -4,9 +4,6 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 import './assets/logica.js'
 
-
-
-
 // ROUTER
 
 const router = createRouter({
@@ -28,3 +25,5 @@ const router = createRouter({
 const app = createApp(App);
 app.use(router);
 app.mount('#app');
+
+export default router

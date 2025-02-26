@@ -8,7 +8,7 @@
 <script>
 import BarraSuperior from '@/components/BarraSuperior.vue';
 import BarraInferior from '@/components/BarraInferior.vue';
-import Contenido from '@/components/Contenido.vue';
+import Contenido from '@/views/Contenido.vue';
 export default {
 	components: {
 		BarraSuperior,
